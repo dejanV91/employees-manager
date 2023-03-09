@@ -6,8 +6,8 @@ const Header = () => {
     <div className="header">
       <div className="container-buttons">
         <Button name={"EMPLOYEES"}></Button>
-        <Button name={"TASKA"}></Button>
-        <Button name={"TOP 5 EMPLOYESS"}></Button>
+        <Button name={"TASKS"}></Button>
+        <Button name={"TOP 5 "}></Button>
       </div>
     </div>
   );

@@ -1,16 +1,17 @@
 // config
 @import "./config/colors";
 @import "./config/reset";
+@import "./config/util";
 
 //components
 @import "./components/header.scss";
 @import "./components/button.scss";
+@import "./components/employeesList.scss";
 
 .App {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 2200px;
   min-height: 100vh;
-  border: 1px solid $color-text-primary;
 }

@@ -1,15 +1,20 @@
 import React from "react";
 import "./styles/App.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// import HomePage from "./pages/HomePage";
+import HomePage from "./pages/HomePage";
 import TasksPage from "./pages/TasksPage";
 
 function App() {
   return (
-    <div className="App">
-      {/* <HomePage></HomePage> */}
-      <TasksPage></TasksPage>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* <div className="App"> */}
+        <Route path={"/"} element={<HomePage />}></Route>
+        <Route path={"/tasks"} element={<TasksPage />}></Route>
+        {/* </div> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

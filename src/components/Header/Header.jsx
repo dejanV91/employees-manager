@@ -1,12 +1,17 @@
 import React from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="header">
       <div className="container-buttons">
-        <Button name={"EMPLOYEES"}></Button>
-        <Button name={"TASKS"}></Button>
+        <Link to={"/"}>
+          <Button name={"EMPLOYEES"}></Button>
+        </Link>
+        <Link to={"/tasks"}>
+          <Button name={"TASKS"}></Button>
+        </Link>
         <Button name={"TOP 5 "}></Button>
       </div>
     </div>

@@ -5,7 +5,7 @@ import Create from "./Create";
 const Items = () => {
   return (
     <div className="container">
-      <Create></Create>
+      <Create task={"Employee"}></Create>
       <Item name={"Dejan Vukoicic"}></Item>
       <Item name={"Jovana Kraljevic"}></Item>
       <Item name={"Niko Kovac"}></Item>

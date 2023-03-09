@@ -1,9 +1,9 @@
 import React from "react";
 
-const Create = () => {
+const Create = ({ task }) => {
   return (
     <div>
-      <button className="create-btn"> Create Employee</button>
+      <button className="create-btn"> Create {task}</button>
     </div>
   );
 };

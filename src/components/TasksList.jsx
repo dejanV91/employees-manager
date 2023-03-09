@@ -6,7 +6,7 @@ const TasksList = () => {
   return (
     <div className="container">
       <Create></Create>
-      <Item></Item>
+      <Item name={"Developer"}></Item>
     </div>
   );
 };

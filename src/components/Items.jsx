@@ -6,9 +6,9 @@ const Items = () => {
   return (
     <div className="container">
       <Create></Create>
-      <Item></Item>
-      <Item></Item>
-      <Item></Item>
+      <Item name={"Dejan Vukoicic"}></Item>
+      <Item name={"Jovana Kraljevic"}></Item>
+      <Item name={"Niko Kovac"}></Item>
     </div>
   );
 };

@@ -7,6 +7,7 @@ import TasksPage from "./pages/TasksPage";
 function App() {
   return (
     <div className="App">
+      {/* <HomePage></HomePage> */}
       <TasksPage></TasksPage>
     </div>
   );

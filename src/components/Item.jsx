@@ -1,10 +1,10 @@
 import React from "react";
 import ButtonsGroup from "./Buttons/ButtonsGroup";
 
-const Item = () => {
+const Item = ({ name }) => {
   return (
     <div className="item">
-      <h3>Dejan Vukoicic</h3>
+      <h3>{name}</h3>
       <ButtonsGroup></ButtonsGroup>
     </div>
   );

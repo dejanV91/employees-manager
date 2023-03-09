@@ -1,0 +1,32 @@
+.btn {
+  width: 180px;
+  height: 45px;
+  box-shadow: inset 0px 0px 15px 3px $color-button2;
+  background: linear-gradient(
+    to bottom,
+    $color-button3 5%,
+    $color-button4 100%
+  );
+  background-color: $color-button3;
+  border-radius: 10px;
+  border: 1px solid $color-button1;
+  display: inline-block;
+  cursor: pointer;
+  color: $color-text-primary;
+  font-size: 15px;
+
+  text-decoration: none;
+  text-shadow: 0px 1px 0px $text-shadow;
+  &:hover {
+    background: linear-gradient(
+      to bottom,
+      $color-button4 5%,
+      $color-button3 100%
+    );
+    background-color: $color-button4;
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}

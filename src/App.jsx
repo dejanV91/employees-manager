@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/App.scss";
 
-import HomePage from "./pages/HomePage";
+// import HomePage from "./pages/HomePage";
 import TasksPage from "./pages/TasksPage";
 
 function App() {

@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "../components/Header/Header";
-import EmployeesList from "../components/EmployeesList";
+import Items from "../components/Items";
 
 const HomePage = () => {
   return (
     <>
       <Header></Header>
-      <EmployeesList></EmployeesList>
+      <Items></Items>
     </>
   );
 };

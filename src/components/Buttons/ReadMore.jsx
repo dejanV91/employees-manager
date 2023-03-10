@@ -1,10 +1,9 @@
 import React from "react";
-import { useGlobalContext } from "../../Context/context";
-const ReadMore = () => {
-  const { handleToggle } = useGlobalContext();
+
+const ReadMore = ({ setIsOpen, id, isOpen }) => {
   return (
-    <button onClick={(e) => handleToggle(e)} className="read-more">
-      View
+    <button onClick={() => setIsOpen(id)} className="read-more">
+      {isOpen === id ? "Close" : "View"}
     </button>
   );
 };

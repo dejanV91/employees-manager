@@ -1,15 +1,17 @@
 import React from "react";
 import Create from "./Create";
-import Item from "./Item";
+import Task from "./Task";
+import { useGlobalContext } from "../Context/context";
 
 const TasksList = () => {
+  const { tasks } = useGlobalContext();
+
   return (
     <div className="container">
-      <Create task={"Task"}></Create>
-      <Item name={"Developer"}></Item>
-      <Item name={"Frontend"}></Item>
-      <Item name={"DevOps"}></Item>
-      <Item name={"Backand"}></Item>
+      <Create task={"Task"} />
+      {tasks?.map((task) => {
+        return <Task key={task.id} id={task.id} task={task} />;
+      })}
     </div>
   );
 };

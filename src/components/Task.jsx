@@ -4,15 +4,15 @@ import Delete from "./Buttons/Delete";
 import ReadMore from "./Buttons/ReadMore";
 import Update from "./Buttons/Update";
 
-const Item = ({ item }) => {
-  const { full_name, id } = item;
+const Task = ({ task }) => {
+  const { title, id } = task;
 
   const [isOpen, setIsOpen] = useState(null);
 
   return (
     <div>
       <div id={id} className="item">
-        <h3>{full_name}</h3>
+        <h3>{title}</h3>
         <div className="buttons-group">
           <ReadMore setIsOpen={setIsOpen} id={id} isOpen={isOpen} />
           <Update />
@@ -26,4 +26,4 @@ const Item = ({ item }) => {
   );
 };
 
-export default Item;
+export default Task;

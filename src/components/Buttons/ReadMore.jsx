@@ -1,9 +1,15 @@
 import React from "react";
 
-const ReadMore = ({ setIsOpen, id, isOpen }) => {
+const ReadMore = ({ setIsOpen, id, isOpen, isClose, setIsClose }) => {
   return (
-    <button onClick={() => setIsOpen(id)} className="read-more">
-      {isOpen === id ? "Close" : "View"}
+    <button
+      onClick={() => {
+        setIsClose(!isClose);
+        setIsOpen(id);
+      }}
+      className="read-more"
+    >
+      {isOpen === id && isClose ? "Close" : "View"}
     </button>
   );
 };

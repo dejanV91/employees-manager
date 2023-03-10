@@ -7,6 +7,7 @@ import Update from "./Buttons/Update";
 const Item = ({ item }) => {
   const { full_name, id } = item;
 
+  const [isClose, setIsClose] = useState(false);
   const [isOpen, setIsOpen] = useState(null);
 
   return (
@@ -14,12 +15,18 @@ const Item = ({ item }) => {
       <div id={id} className="item">
         <h3>{full_name}</h3>
         <div className="buttons-group">
-          <ReadMore setIsOpen={setIsOpen} id={id} isOpen={isOpen} />
+          <ReadMore
+            setIsOpen={setIsOpen}
+            id={id}
+            isOpen={isOpen}
+            setIsClose={setIsClose}
+            isClose={isClose}
+          />
           <Update />
           <Delete />
         </div>
       </div>
-      <div className={isOpen === id ? "dropDown open" : "dropDown"}>
+      <div className={isOpen === id && isClose ? "dropDown open" : "dropDown"}>
         <h2>Full Name:</h2>
       </div>
     </div>

@@ -4,7 +4,7 @@ import ButtonsGroup from "./Buttons/ButtonsGroup";
 const Item = ({ name }) => {
   return (
     <div>
-      <div className="item open">
+      <div className="item">
         <h3>{name}</h3>
         <ButtonsGroup></ButtonsGroup>
       </div>

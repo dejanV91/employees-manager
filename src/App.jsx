@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.scss";
-// import { AppProvider } from "./Context/context";
 
 import HomePage from "./pages/HomePage";
 import TasksPage from "./pages/TasksPage";

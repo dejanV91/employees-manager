@@ -28,13 +28,28 @@ const AppProvider = ({ children }) => {
     }
   }
 
+  const deleteItem = (id, url, name) => {
+    switch (name) {
+      case "employees":
+        setEmployees(employees.filter((employee) => employee.id !== id));
+        axios.delete(`${api}${url}${id}`);
+        break;
+      case "tasks":
+        setTasks(tasks.filter((task) => task.id !== id));
+        axios.delete(`${api}${url}${id}`);
+        break;
+      default:
+        break;
+    }
+  };
+
   useEffect(() => {
     getAllEmployees();
     getAllTasks();
   }, []);
 
   return (
-    <AppContext.Provider value={{ employees, tasks }}>
+    <AppContext.Provider value={{ employees, tasks, deleteItem }}>
       {children}
     </AppContext.Provider>
   );

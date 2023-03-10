@@ -23,7 +23,7 @@ const Item = ({ item }) => {
             isClose={isClose}
           />
           <Update />
-          <Delete />
+          <Delete id={id} url={"/users/"} name={"employees"} />
         </div>
       </div>
       <div className={isOpen === id && isClose ? "dropDown open" : "dropDown"}>

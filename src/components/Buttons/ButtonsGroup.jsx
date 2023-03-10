@@ -3,10 +3,10 @@ import Delete from "./Delete";
 import ReadMore from "./ReadMore";
 import Update from "./Update";
 
-const ButtonsGroup = ({ toggleOpen }) => {
+const ButtonsGroup = () => {
   return (
     <div className="buttons-group">
-      <ReadMore toggleOpen={toggleOpen}></ReadMore>
+      <ReadMore></ReadMore>
       <Update></Update>
       <Delete></Delete>
     </div>

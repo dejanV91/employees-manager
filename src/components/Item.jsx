@@ -4,8 +4,8 @@ import Delete from "./Buttons/Delete";
 import ReadMore from "./Buttons/ReadMore";
 import Update from "./Buttons/Update";
 
-const Item = ({ item }) => {
-  const { full_name, id } = item;
+const Item = ({ employee, url }) => {
+  const { full_name, id } = employee;
 
   const [isClose, setIsClose] = useState(false);
   const [isOpen, setIsOpen] = useState(null);
@@ -22,7 +22,7 @@ const Item = ({ item }) => {
             setIsClose={setIsClose}
             isClose={isClose}
           />
-          <Update />
+          <Update url={url} id={id} />
           <Delete id={id} url={"/users/"} name={"employees"} />
         </div>
       </div>

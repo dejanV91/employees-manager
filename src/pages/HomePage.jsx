@@ -5,8 +5,8 @@ import Items from "../components/Items";
 const HomePage = () => {
   return (
     <>
-      <Header></Header>
-      <Items></Items>
+      <Header />
+      <Items />
     </>
   );
 };

@@ -5,8 +5,8 @@ import TasksList from "../components/TasksList";
 const TasksPage = () => {
   return (
     <>
-      <Header></Header>
-      <TasksList></TasksList>
+      <Header />
+      <TasksList />
     </>
   );
 };

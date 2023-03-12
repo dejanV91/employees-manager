@@ -7,6 +7,16 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  .counter {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 15px;
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
   div {
     display: flex;
     flex-direction: column;
@@ -73,6 +83,16 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    .single-page-btns {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      .cancel {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+      }
+    }
     label {
       font-size: 13px;
       font-family: Arial, Helvetica, sans-serif;

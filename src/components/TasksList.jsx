@@ -28,6 +28,10 @@ const TasksList = () => {
 
   return (
     <div className="container">
+      <div className="counter">
+        <h4>Number tasks:</h4>
+        <h3>{tasks.length}</h3>
+      </div>
       <div>
         <button onClick={() => navigate("/tasks/new")} className="create-btn">
           Create Task

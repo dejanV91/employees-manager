@@ -28,6 +28,10 @@ const Items = () => {
 
   return (
     <div className="container">
+      <div className="counter">
+        <h4>Number employees:</h4>
+        <h3>{employees.length}</h3>
+      </div>
       <div>
         <button onClick={() => navigate("/users/new")} className="create-btn">
           Create Employee

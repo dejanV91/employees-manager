@@ -91,10 +91,20 @@ const SingleTask = () => {
             onChange={handleChange}
           />
         </div>
-
-        <button onClick={handleSubmit} className="create-btn">
-          {id === "new" ? "CREATE" : "UPDATE"}
-        </button>
+        <div className="single-page-btns">
+          <button onClick={handleSubmit} className="create-btn">
+            {id === "new" ? "CREATE" : "UPDATE"}
+          </button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              navigate("/tasks");
+            }}
+            className="cancel"
+          >
+            Cancel
+          </button>
+        </div>
       </form>
     </div>
   );

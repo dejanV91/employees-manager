@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import config from "../config.json";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 const TopSalaries = () => {
-  const navigate = useNavigate();
   const [employees, setEmployees] = useState([]);
 
   const fetchEmployees = async () => {
@@ -17,14 +15,18 @@ const TopSalaries = () => {
 
   return (
     <div className="container">
+      <div className="counter">
+        <h4>TOP 5 SALARIES</h4>
+      </div>
       <div>
-        <button onClick={() => navigate("/")} className="create-btn">
+        <button onClick={() => window.history.back()} className="create-btn">
           Back
         </button>
       </div>
 
       {employees
         .sort((a, b) => b.monthly_salary - a.monthly_salary)
+        .slice(0, 5)
         .map((employee) => {
           const { full_name, id, monthly_salary } = employee;
           return (

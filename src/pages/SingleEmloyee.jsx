@@ -34,13 +34,13 @@ const SingleEmloyee = () => {
     e.preventDefault();
     try {
       if (id === "new") {
-        axios.post(`${config.api}/users`, employee);
+        await axios.post(`${config.api}/users`, employee);
 
-        return navigate("/");
+        navigate("/");
       } else {
-        axios.put(`${config.api}/users/${id}`, employee);
+        await axios.put(`${config.api}/users/${id}`, employee);
 
-        return navigate("/");
+        navigate("/");
       }
     } catch (error) {
       console.log(error);

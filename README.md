@@ -8,20 +8,19 @@ A web application that manages employees and their tasks
 
 ## Demo
 
-Insert gif or link to demo
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone git@github.com:dejanV91/employees-manager.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd employees-manager
 ```
 
 Install dependencies
@@ -51,12 +50,12 @@ The application will be available at http://localhost:3000
         └───config
 ```
 
-components: This directory contains the components that make up the application. It includes a Header component that is repeated on multiple pages.
+**components**: This directory contains the components that make up the application. It includes a Header component that is repeated on multiple pages.
 
-pages: This is a directory that contains the different pages that will be displayed in the application. Each page usually consists of several components that are located in the components directory.
+**pages**: This is a directory that contains the different pages that will be displayed in the application. Each page usually consists of several components that are located in the components directory.
 
-styles: This directory contains the styles used in the application. The styles directory contains two sub-directories:
+**styles**: This directory contains the styles used in the application. The styles directory contains two sub-directories:
 
-components: This directory contains styles that are specific to certain components in the application.
+**components**: This directory contains styles that are specific to certain components in the application.
 
-config: This directory contains styles that apply to the application as a whole, such as themes or global styles.
+**config**: This directory contains styles that apply to the application as a whole, such as themes or global styles.

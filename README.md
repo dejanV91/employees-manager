@@ -6,9 +6,6 @@ A web application that manages employees and their tasks
 
 **Client:** React, SCSS
 
-## Demo
-
-
 ## Run Locally
 
 Clone the project

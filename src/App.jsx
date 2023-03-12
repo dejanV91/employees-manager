@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import SingleEmloyee from "./pages/SingleEmloyee";
 import TasksPage from "./pages/TasksPage";
 import SingleTask from "./pages/SingleTask";
+import TopSalaries from "./pages/TopSalaries";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/users/:id" element={<SingleEmloyee />}></Route>
         <Route path="/tasks" element={<TasksPage />} />
         <Route path="/tasks/:id" element={<SingleTask />} />
+        <Route path="/salaries" element={<TopSalaries />} />
       </Routes>
     </>
   );

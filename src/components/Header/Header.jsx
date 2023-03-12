@@ -12,7 +12,9 @@ const Header = () => {
         <Link to={"/tasks"}>
           <Button name={"TASKS"}></Button>
         </Link>
-        <Button name={"TOP 5 "}></Button>
+        <Link to={"/salaries"}>
+          <Button name={"TOP 5 "}></Button>
+        </Link>
       </div>
     </div>
   );
